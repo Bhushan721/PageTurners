@@ -1,0 +1,112 @@
+/*......... Navigation Bar...........*/
+	nav {
+		display: block;
+		padding: 0;
+	}
+
+	nav .icon {
+		display: inline-block;
+		padding: 15px 30px;
+	}
+
+	nav .search_box {
+		width: 100%;
+		display: inline-flex;
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+
+	nav .search_box input {
+		width: 90%;
+	}
+
+	nav ol {
+		display: flex;
+		flex-direction: column;
+		background: #fff; 
+		height: 0;
+		visibility: hidden;
+		transition: 0.3s;
+	}
+
+	nav ol li {
+		text-align: center;
+	}
+
+	nav ol li a {
+		color: #000;
+		font-size: 28px;
+		padding: 25px;
+		display: block;
+	}
+
+	nav ol li:hover a {
+	margin: 10px 50px;
+	padding: 5px 10px;
+	border-radius: 10px;
+	background: #0a5071;
+	color: #fff;
+	}
+
+	nav .bar {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 60px;
+		cursor: pointer;
+
+	}
+	nav .bar #times {
+		display: none;
+	}
+
+	#check:checked ~ nav .bar #times {
+		display: block;
+	}
+	#check:checked ~ nav .bar #bars {
+		display: none;
+	}
+	#check:checked ~ nav ol{
+		visibility: visible;
+		height: 465px;
+	}
+
+/*.........Section-A.......*/
+#section-a {
+	grid-template-columns: 1fr;
+}
+#slider figure img {
+	height: 300px;
+}
+#section-a p {
+	padding: 10px;
+	margin: 0;
+}
+
+/*.........Section-B.......*/
+.title {
+	grid-template-columns: 1fr 1fr;
+}
+
+.title a {
+	text-align: right;
+	padding-right: 15px; 
+}
+
+.grid {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 5px;
+	}
+section article {
+	margin: 5px;
+}
+
+/*..........Footer.........*/
+
+footer {
+	padding: 40px;
+}
+
+footer .cover {
+	grid-template-columns: repeat(2,1fr);
+}
